@@ -1,0 +1,284 @@
+/* 全局样式 */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* 欢迎信息部分 */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* 导航链接部分 */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.nav-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #ff6b6b;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* 契合度测试入口 */
+.compatibility-test {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+}
+
+.compatibility-test h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.compatibility-test p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.test-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(255, 107, 107, 0.2);
+}
+
+.test-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(255, 107, 107, 0.3);
+}
+
+/* 用户反馈部分 */
+.feedback-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feedback-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.feedback-carousel {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.feedback-card {
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-card p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.feedback-card .author {
+  color: #666;
+  font-style: italic;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ff6b6b;
+  transform: scale(1.2);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1rem;
+  }
+
+  .welcome-section {
+    padding: 2rem 1rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-button {
+    width: 100%;
+  }
+
+  .compatibility-test {
+    padding: 2rem 1rem;
+  }
+
+  .compatibility-test h2 {
+    font-size: 1.5rem;
+  }
+
+  .test-button {
+    width: 100%;
+  }
+
+  .feedback-card {
+    padding: 1.5rem;
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feedback-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* 表单容器 */
+.form-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* 表单组件 */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+/* 提交按钮 */
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #ff5252;
+}
+
+/* 表单页脚 */
+.form-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.form-footer .link {
+  color: #ff6b6b;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.form-footer .link:hover {
+  color: #ff5252;
+} 
